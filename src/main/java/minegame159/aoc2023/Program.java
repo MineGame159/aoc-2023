@@ -2,6 +2,7 @@ package minegame159.aoc2023;
 
 import minegame159.aoc2023.days.Day01;
 import minegame159.aoc2023.days.Day02;
+import minegame159.aoc2023.days.Day03;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,6 +16,7 @@ public class Program {
     private static final Day[] DAYS = {
             new Day01(),
             new Day02(),
+            new Day03(),
     };
 
     public static void main(String[] args) {
