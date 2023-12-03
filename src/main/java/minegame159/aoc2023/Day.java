@@ -9,7 +9,7 @@ public abstract class Day {
         this.number = number;
     }
 
-    public abstract String calculateFirst(List<String> input);
+    public abstract int calculateFirst(List<String> input);
 
-    public abstract String calculateSecond(List<String> input);
+    public abstract int calculateSecond(List<String> input);
 }

@@ -12,7 +12,7 @@ public class Day02 extends Day {
     }
 
     @Override
-    public String calculateFirst(List<String> input) {
+    public int calculateFirst(List<String> input) {
         int sum = 0;
 
         for (String line : input) {
@@ -20,11 +20,11 @@ public class Day02 extends Day {
             if (game.isPossible(SET)) sum += game.id;
         }
 
-        return Integer.toString(sum);
+        return sum;
     }
 
     @Override
-    public String calculateSecond(List<String> input) {
+    public int calculateSecond(List<String> input) {
         int sum = 0;
 
         for (String line : input) {
@@ -32,7 +32,7 @@ public class Day02 extends Day {
             sum += game.getBiggest().power();
         }
 
-        return Integer.toString(sum);
+        return sum;
     }
 
     private Game parseGame(String string) {

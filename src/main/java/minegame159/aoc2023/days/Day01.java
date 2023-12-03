@@ -12,25 +12,25 @@ public class Day01 extends Day {
     }
 
     @Override
-    public String calculateFirst(List<String> input) {
+    public int calculateFirst(List<String> input) {
         int sum = 0;
 
         for (String line : input) {
             sum += Integer.parseInt(getFirst(line, false) + "" + getLast(line, false));
         }
 
-        return Integer.toString(sum);
+        return sum;
     }
 
     @Override
-    public String calculateSecond(List<String> input) {
+    public int calculateSecond(List<String> input) {
         int sum = 0;
 
         for (String line : input) {
             sum += Integer.parseInt(getFirst(line, true) + "" + getLast(line, true));
         }
 
-        return Integer.toString(sum);
+        return sum;
     }
 
     private int getFirst(String string, boolean allowWords) {

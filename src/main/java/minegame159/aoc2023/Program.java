@@ -60,12 +60,12 @@ public class Program {
 
     private static void run(Day day, List<String> input, boolean first) {
         long start = System.nanoTime();
-        String result = first ? day.calculateFirst(input) : day.calculateSecond(input);
+        int result = first ? day.calculateFirst(input) : day.calculateSecond(input);
         long duration = System.nanoTime() - start;
 
         System.out.println();
-        System.out.printf(" --- Part %d --- \n", first ? 1 : 2);
-        System.out.println("Result: " + result);
-        System.out.printf("Took: %f ms\n", duration / 1000000.0);
+        System.out.printf(" --- Day %d - Part %d --- \n", day.number, first ? 1 : 2);
+        System.out.printf("Result: %d\n", result);
+        System.out.printf("Time: %f ms\n", duration / 1000000.0);
     }
 }
