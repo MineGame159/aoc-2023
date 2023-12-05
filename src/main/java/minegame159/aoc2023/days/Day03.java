@@ -11,7 +11,7 @@ public class Day03 extends Day {
     }
 
     @Override
-    public int calculateFirst(List<String> input) {
+    public long calculateFirst(List<String> input) {
         Schematic schematic = parse(input);
         int sum = 0;
 
@@ -23,7 +23,7 @@ public class Day03 extends Day {
     }
 
     @Override
-    public int calculateSecond(List<String> input) {
+    public long calculateSecond(List<String> input) {
         Schematic schematic = parse(input);
         int sum = 0;
 

@@ -1,9 +1,6 @@
 package minegame159.aoc2023;
 
-import minegame159.aoc2023.days.Day01;
-import minegame159.aoc2023.days.Day02;
-import minegame159.aoc2023.days.Day03;
-import minegame159.aoc2023.days.Day04;
+import minegame159.aoc2023.days.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,6 +16,7 @@ public class Program {
             new Day02(),
             new Day03(),
             new Day04(),
+            new Day05(),
     };
 
     public static void main(String[] args) {
@@ -64,7 +62,7 @@ public class Program {
 
     private static void run(Day day, List<String> input, boolean first) {
         long start = System.nanoTime();
-        int result = first ? day.calculateFirst(input) : day.calculateSecond(input);
+        long result = first ? day.calculateFirst(input) : day.calculateSecond(input);
         long duration = System.nanoTime() - start;
 
         System.out.println();

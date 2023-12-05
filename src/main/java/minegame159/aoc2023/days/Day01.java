@@ -12,7 +12,7 @@ public class Day01 extends Day {
     }
 
     @Override
-    public int calculateFirst(List<String> input) {
+    public long calculateFirst(List<String> input) {
         int sum = 0;
 
         for (String line : input) {
@@ -23,7 +23,7 @@ public class Day01 extends Day {
     }
 
     @Override
-    public int calculateSecond(List<String> input) {
+    public long calculateSecond(List<String> input) {
         int sum = 0;
 
         for (String line : input) {
