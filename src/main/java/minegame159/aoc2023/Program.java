@@ -17,6 +17,7 @@ public class Program {
             new Day03(),
             new Day04(),
             new Day05(),
+            new Day06(),
     };
 
     public static void main(String[] args) {
